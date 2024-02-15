@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather App</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div class="mdiv">
+  <div class="container">
+      <h3 class="heading">WEATHER FORECAST</h3>
+      <form>
+      <div class="component">
+      <div>
+      <input type="text" name="city" id="city_name" placeholder="Enter a city" autofocus>
+      </div>
+      <div class="btn">
+      <button type="button" class="srch_btn" onclick="fetchCity()"><img src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" alt="search icon" height="20px"></button>
+      </div>
+      </div>
+      <br>
+      <div align="center" style="margin-top: -30px">
+      <img  src="https://cdn.iconscout.com/icon/free/png-256/free-cloudy-weather-11-1147979.png" alt="weathericon" height="150px">
+      </div>
+      <div align="center" style="margin-top: -20px">
+      <span id="city">CITY NAME</span>
+      <br>
+      <span class="measurement" id="temp">°C</span>
+      </div>
+      <div align="center" style="margin-top: 20px" >
+       <table>
+       <tr>
+         <td>
+           <h5 class="headings">WIND SPEED</h5>
+           <span class="measurement" id="wind_speed">0 km/hr</span>
+         </td>
+         <td>
+           <h4 class="headings">HUMIDITY</h4>
+           <span class="measurement" id="humidity">0 g/kg</span>
+         </td>
+       </tr>
+       </table>
+      
+      </div>
+      </form>
+  </div>
+  </div>
+</body>
+</html>
